@@ -112,7 +112,7 @@ Add all three subnets to the associations, then save the associations.
 Let’s now edit the route table to have access to the internet though our Internet Gateway. Click on the “Routes” tab, “Edit routes”, then “Add route”. We will add a route that will direct all other addresses destined outside our network, to our newly created Internet Gateway through to the internet, as seen below.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/b72415f2f717ccfc16ee3f7a5d537f4cb67cf43b/Images/Screenshot%202024-12-23%20202753.png)
 
 We now have an Internet Gateway and a configured Route Table. Let’s proceed to Step 3— Application Load Balancer!
 
