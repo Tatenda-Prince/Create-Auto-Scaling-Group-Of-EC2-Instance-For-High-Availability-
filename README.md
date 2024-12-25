@@ -49,7 +49,7 @@ You are a Cloud Engineer for UP THE CHELS TECH, tasked to build a highly availab
 Navigate to VPC dashboard and click “Create VPC”. Continue by naming your VPC, then add the IPv4 CIDR block. We will be using 10.10.0.0/16, as seen below. You can now “Create VPC”.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/b43a747ce06afa9c6b11029ad65a6ef82cc5c0bc/Images/Screenshot%202024-12-23%20200843.png)
 
 
 # Create Subnets
