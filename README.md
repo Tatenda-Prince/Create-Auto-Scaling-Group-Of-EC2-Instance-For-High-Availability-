@@ -216,7 +216,19 @@ yum install stress -y
 
 After creating the launch template, in the following window, click “Create Auto Scaling group”, as show below. Scroll down, select “Auto scaling groups” in the left pane, then “Create auto scaling group”.
 
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/3a21a3e480bc65fc1af5367898fc11a619c7dd73/Images/Screenshot%202024-12-23%20204656.png) 
+
+
+Name the Auto scaling group, select the launch template previously created, then click “Next”.
+
+Select our previously created VPC, add the three of our subnets, as seen below, then click “Next”.
+
+
 ![image alt]() 
+
+
+
+
 
 
 
