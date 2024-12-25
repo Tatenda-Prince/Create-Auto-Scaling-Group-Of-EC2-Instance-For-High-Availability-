@@ -181,7 +181,44 @@ Proceed to create a new key pair to enable you to authenticate via SSH into our 
 
 Continue to “Network settings” and select our previously created load balancer security group, as shown below.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/7765a8ba39ba9bfd00e2c0d999dbb5eea59898d6/Images/Screenshot%202024-12-23%20204529.png)
+
+
+# Bootstrap EC2 Instance to launch with Apache Web Server
+
+Continue to the “Advanced details”. Expand the settings, then scroll down to add the user data to install, start and enable the Apache Web Server. We will also install other software to enable us to stress test an EC2 Instance.
+
+Copy the bash script below, paste it in the user data field, then “create launch template” —
+
+#!/bin/bash
+
+#Update all yum package repositories
+yum update -y
+
+#Install Apache Web Server
+yum install -y httpd.x86_64
+
+#Start and Enable Apache Web Server
+systemctl start httpd.service
+systemctl enable httpd.service
+
+#Install epel for easy access to install packages for commonly used software
+amazon-linux-extras install epel -y
+
+#Install stress to enable us to test EC2 Instance under stress work loads
+yum install stress -y
+
+
+
+# Step 5: Create an Autoscaling Group (ASG)
+
+# Configure new ASG launch options
+
+After creating the launch template, in the following window, click “Create Auto Scaling group”, as show below. Scroll down, select “Auto scaling groups” in the left pane, then “Create auto scaling group”.
+
+![image alt]() 
+
+
 
 
 
