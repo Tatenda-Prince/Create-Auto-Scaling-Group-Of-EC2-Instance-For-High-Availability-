@@ -154,6 +154,19 @@ Continue to “Listeners and routing”. Make sure the listener Protocol is set 
 ![image alt]()
 
 
+We can now select our newly created target group, as shown below.
+
+
+![image alt]()
+
+Scroll to the bottom, review the summary then “Create load balancer”. Now let’s continue to Step 4 — Launch Template!
+
+
+
+
+
+
+
 
 
 
