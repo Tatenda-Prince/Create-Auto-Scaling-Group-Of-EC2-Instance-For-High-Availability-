@@ -57,7 +57,7 @@ Navigate to VPC dashboard and click “Create VPC”. Continue by naming your VP
 Navigate to “Subnets” in the left pane of the VPC dashboard. Click “Create subnets”, then select our newly created VPC from the list. Name your subnet, then choose the Availability Zone (AZ) and assigned IPv4 CIDR block. For the first subnet, we will use AZ us-east-1a and CIDR block 10.10.1.0/24. For the second subnet, use AZ us-east-1b and CIDR block 10.10.2.0/24. Lastly, for subnet three, use AZ us-east-1c and CIDR block 10.10.3.0/24.
 
 
-![image]()
+![image](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/6243431bea3fed2b535b5b5eff8e88eebb5618af/Images/Screenshot%202024-12-23%20201543.png)
 
 
 
