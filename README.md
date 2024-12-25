@@ -245,10 +245,12 @@ In additional settings, “enable group metric collection within CloudWatch”.
 
 As our use case states, we will set our desired and minimum capacity to 2. Our maximum capacity will be set to 5. Select “Target scaling policy” and make sure the metric type is “Average CPU utilization” and “Target value” is set to 50, then click “Next”.
 
+
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/cd16153029c5507ba7d31263730ce842e9d3e1c4/Images/Screenshot%202024-12-23%20205408.png)
 
 
-![image alt]() 
+
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/7d8a2ee44fcd6a8f052484208587ce054e3b684e/Images/Screenshot%202024-12-23%20205430.png) 
 
 
 
