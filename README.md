@@ -62,7 +62,7 @@ Navigate to “Subnets” in the left pane of the VPC dashboard. Click “Create
 
 After configuring all three subnets, click “Create subnets”. You should be able to see all 3 subnets created and “Available”, as seen below.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/642d84c40f05590e01105566699d5131a4316cb3/Images/Screenshot%202024-12-25%20114630.png)
 
 
 We need to enable each subnet to automatically receive a public IP address so we can send and receive traffic over the internet. To accomplish this, select one of your subnets, then navigate to “Actions” and click “Edit subnet settings”. Enable “Auto-assign public address”, then save the changes. Make sure to do this with all 3 subnets.
