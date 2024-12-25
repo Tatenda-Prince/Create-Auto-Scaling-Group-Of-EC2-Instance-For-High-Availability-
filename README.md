@@ -81,9 +81,11 @@ Now that we’ve created and configured our VPC and 3 subnets, we can proceed to
 Navigate to your VPC dashboard, select “Internet Gateway”, then “Create a new gateway”. Name the Internet Gateway and proceed to “Create internet gateway”.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/853f8f7d1d5799cfe79a0a6dd0603962bee424c1/Images/Screenshot%202024-12-23%20201923.png)
 
 On the Internet Gateway dashboard, select your Internet Gateway, click “Actions”, then “Attach to VPC”. Select your VPC, then attach the Internet Gateway, a shown below.
+
+![image alt]()
 
 
 
