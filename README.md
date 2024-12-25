@@ -224,7 +224,14 @@ Name the Auto scaling group, select the launch template previously created, then
 Select our previously created VPC, add the three of our subnets, as seen below, then click “Next”.
 
 
-![image alt]() 
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/73ead94ea986f79696511127a0f825d58c6df5dd/Images/Screenshot%202024-12-23%20205105.png) 
+
+
+# Configure load balancing options
+
+Select “Attached to and exiting load balancer”, then choose our previously created load balancer’s target group, as shown below.
+
+![imagee alt]()
 
 
 
