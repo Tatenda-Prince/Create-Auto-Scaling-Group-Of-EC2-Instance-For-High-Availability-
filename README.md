@@ -85,7 +85,38 @@ Navigate to your VPC dashboard, select “Internet Gateway”, then “Create a 
 
 On the Internet Gateway dashboard, select your Internet Gateway, click “Actions”, then “Attach to VPC”. Select your VPC, then attach the Internet Gateway, a shown below.
 
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/ec11836c0a66e08fbb133760cf04f6dd2d3ba229/Images/Screenshot%202024-12-23%20202017.png)
+
+Your Internet Gateway’s state should now read “Attached” with the VPC ID of our previously created VPC, as shown below.
+
+
 ![image alt]()
+
+
+# Configure route tables
+
+Navigate to “Route tables” and “Create route table”. Name the route table, choose the VPC, then “Create route table”.
+
+![image alt]()
+
+In your Route table dashboard, select the “Subnet associations” tab, then edit the explicit subnet associations —
+
+
+![image alt]()
+
+Add all three subnets to the associations, then save the associations.
+
+
+![image alt]()
+
+Let’s now edit the route table to have access to the internet though our Internet Gateway. Click on the “Routes” tab, “Edit routes”, then “Add route”. We will add a route that will direct all other addresses destined outside our network, to our newly created Internet Gateway through to the internet, as seen below.
+
+
+![image alt]()
+
+We now have an Internet Gateway and a configured Route Table. Let’s proceed to Step 3— Application Load Balancer!
+
+
 
 
 
