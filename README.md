@@ -107,7 +107,7 @@ In your Route table dashboard, select the “Subnet associations” tab, then ed
 Add all three subnets to the associations, then save the associations.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/c8f38c00c1927864a472e9eb75cb8a8985fe0ae6/Images/Screenshot%202024-12-23%20202535.png)
 
 Let’s now edit the route table to have access to the internet though our Internet Gateway. Click on the “Routes” tab, “Edit routes”, then “Add route”. We will add a route that will direct all other addresses destined outside our network, to our newly created Internet Gateway through to the internet, as seen below.
 
