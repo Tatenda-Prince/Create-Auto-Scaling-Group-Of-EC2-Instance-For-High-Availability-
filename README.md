@@ -245,7 +245,16 @@ In additional settings, “enable group metric collection within CloudWatch”.
 
 As our use case states, we will set our desired and minimum capacity to 2. Our maximum capacity will be set to 5. Select “Target scaling policy” and make sure the metric type is “Average CPU utilization” and “Target value” is set to 50, then click “Next”.
 
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/cd16153029c5507ba7d31263730ce842e9d3e1c4/Images/Screenshot%202024-12-23%20205408.png)
+
+
+Continue until you get to the review page. Review the final configurations, then “Create auto scaling group”. You should be able to see your ASG with a status of “updating capacity..” as it launches your EC2 Instances according to the pre-set configurations.
+
+Navigate to your EC2 dashboard and verify that there are two running EC2 Instances created by your ASG.
+
 ![image alt]()
+
+
 
 
 
