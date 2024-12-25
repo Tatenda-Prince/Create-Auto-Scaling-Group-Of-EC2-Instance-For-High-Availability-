@@ -90,7 +90,7 @@ On the Internet Gateway dashboard, select your Internet Gateway, click “Action
 Your Internet Gateway’s state should now read “Attached” with the VPC ID of our previously created VPC, as shown below.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/79a8408f3eb29870dee6d72f7078b8637cfb84ee/Images/Screenshot%202024-12-23%20202056.png)
 
 
 # Configure route tables
