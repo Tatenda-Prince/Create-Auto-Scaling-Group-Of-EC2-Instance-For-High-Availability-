@@ -132,7 +132,10 @@ We will choose to create an Application Load Balancer. Name the Load Balancer an
 Proceed to the Security group setting, then create a new security group. Name your security group and make sure your previously created VPC is selected. Add an inbound rule to allow HTTP traffic from Anywhere (0.0.0.0/0), as seem below.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/6140669c31f0c035049ba36d481af88257369a2e/Images/Screenshot%202024-12-23%20203511.png)
+
+
+![image alt] ()
 
 
 
