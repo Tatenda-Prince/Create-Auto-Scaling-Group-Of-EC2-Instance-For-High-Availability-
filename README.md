@@ -135,7 +135,22 @@ Proceed to the Security group setting, then create a new security group. Name yo
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/6140669c31f0c035049ba36d481af88257369a2e/Images/Screenshot%202024-12-23%20203511.png)
 
 
-![image alt] ()
+
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/efa9f696cd124e85897b2fc6dcb039ba674006ab/Images/Screenshot%202024-12-23%20203543.png)
+
+
+Additionally, add another rule of type “SSH” with source from “Anywhere”. Note — this is security risk, however for this article we will allow it for demonstration sake.
+
+We can now proceed to “Create security group”.
+
+Select the newly created security group from the list, as seen below.
+
+![image alt]()
+
+
+Continue to “Listeners and routing”. Make sure the listener Protocol is set to HTTP and the Port to 80. We will now “Create target group” to be configured for our EC2 Instances. Choose “Instances” for a target type and name your target group. Choose HTTP for the protocol and 80 for the Port. Select our new VPC, click “Next”, then “Create target group”.
+
+
 
 
 
