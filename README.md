@@ -261,6 +261,29 @@ Navigate to your EC2 dashboard and verify that there are two running EC2 Instanc
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/cd4533ed1b69656ea0e4640abe1a128ca35588a5/Images/Screenshot%202024-12-23%20205547.png)
 
 
+# Step 6: Connect to Servers running Apache Web Server
+
+Retrieve the public IP Address of each of the EC2 Instance from the Amazon EC2 dashboard “Networking” tab, copy and paste it in the address bar of your preferred browser. Your browser should display the Apache Web Server default Webpage, as seen below.
+
+
+![image alt]()
+
+
+You should also be able to connect to one of your instances through the application load balancer’s domain name. You can retrieve this by navigating to your previously created load balancer, copying the DNS name, then pasting it in your browser’s address bar, as seen below.
+
+
+![image alt]()
+
+
+# YAY Congratulations!
+
+You’ve just successfully completed “Scaling The Clouds”. You’ve created an Auto Scaling Group of EC2 Web Servers for high availability!
+
+
+
+
+
+
 
 
 
