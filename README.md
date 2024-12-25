@@ -68,7 +68,7 @@ After configuring all three subnets, click “Create subnets”. You should be a
 We need to enable each subnet to automatically receive a public IP address so we can send and receive traffic over the internet. To accomplish this, select one of your subnets, then navigate to “Actions” and click “Edit subnet settings”. Enable “Auto-assign public address”, then save the changes. Make sure to do this with all 3 subnets.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/a2d8ef6c1a8f7ccfbac713d1e39a8df5b2eb6e34/Images/Screenshot%202024-12-23%20201743.png)
 
 
 Now that we’ve created and configured our VPC and 3 subnets, we can proceed to Step 2 — Internet Gateway and Route Tables!
