@@ -116,6 +116,29 @@ Let’s now edit the route table to have access to the internet though our Inter
 
 We now have an Internet Gateway and a configured Route Table. Let’s proceed to Step 3— Application Load Balancer!
 
+# Step 3: Launch a configure application load balancer
+
+# Configure network mappings
+
+Head over to your EC2 dashboard, navigate to the left side, then scroll down. Select “Load Balancers”, then “Create load balancer”.
+
+We will choose to create an Application Load Balancer. Name the Load Balancer and keep the rest of the default basic configurations. Continue on to Network mappings, choose your VPC then select the three AZ’s with your three subnets, as shown below.
+
+![image alt]()
+
+
+![imaga alt]()
+
+
+# Create security group
+
+Proceed to the Security group setting, then create a new security group. Name your security group and make sure your previously created VPC is selected. Add an inbound rule to allow HTTP traffic from Anywhere (0.0.0.0/0), as seem below.
+
+
+![image alt]()
+
+
+
 
 
 
