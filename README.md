@@ -60,6 +60,37 @@ Navigate to “Subnets” in the left pane of the VPC dashboard. Click “Create
 ![image](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/6243431bea3fed2b535b5b5eff8e88eebb5618af/Images/Screenshot%202024-12-23%20201543.png)
 
 
+After configuring all three subnets, click “Create subnets”. You should be able to see all 3 subnets created and “Available”, as seen below.
+
+![image alt]()
+
+
+We need to enable each subnet to automatically receive a public IP address so we can send and receive traffic over the internet. To accomplish this, select one of your subnets, then navigate to “Actions” and click “Edit subnet settings”. Enable “Auto-assign public address”, then save the changes. Make sure to do this with all 3 subnets.
+
+
+![image alt]()
+
+
+Now that we’ve created and configured our VPC and 3 subnets, we can proceed to Step 2 — Internet Gateway and Route Tables!
+
+
+# Step 2: launch Internet gateway and configure route tables
+
+# Create Internet Gateway and attach to VPC
+
+Navigate to your VPC dashboard, select “Internet Gateway”, then “Create a new gateway”. Name the Internet Gateway and proceed to “Create internet gateway”.
+
+
+![image alt]()
+
+On the Internet Gateway dashboard, select your Internet Gateway, click “Actions”, then “Attach to VPC”. Select your VPC, then attach the Internet Gateway, a shown below.
+
+
+
+
+
+
+
 
 
 
