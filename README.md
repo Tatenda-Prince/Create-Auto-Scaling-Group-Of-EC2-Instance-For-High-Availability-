@@ -162,6 +162,22 @@ We can now select our newly created target group, as shown below.
 Scroll to the bottom, review the summary then “Create load balancer”. Now let’s continue to Step 4 — Launch Template!
 
 
+# Step 4: Create Launch Template
+
+# Configure Launch Template 
+
+Navigate to your EC2 dashboard, on the left, click “Launch Templates”, then “Create launch template”.
+
+Name the launch template, select the Amazon Linux AMI that’s part of AWS free tier by clicking the “Quick Start” tab, then choosing the AMI. Choose the “t2.micro” instance type, as shown below.
+
+
+![image alt]()
+
+
+
+
+
+
 
 
 
