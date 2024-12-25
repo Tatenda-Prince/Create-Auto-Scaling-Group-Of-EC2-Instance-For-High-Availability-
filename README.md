@@ -102,7 +102,7 @@ Navigate to “Route tables” and “Create route table”. Name the route tabl
 In your Route table dashboard, select the “Subnet associations” tab, then edit the explicit subnet associations —
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/1a811afd52c18a55038fe58a31de97ab12eaa110/Images/Screenshot%202024-12-23%20202535.png)
 
 Add all three subnets to the associations, then save the associations.
 
