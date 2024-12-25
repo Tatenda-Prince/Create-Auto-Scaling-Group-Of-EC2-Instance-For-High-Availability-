@@ -124,10 +124,7 @@ Head over to your EC2 dashboard, navigate to the left side, then scroll down. Se
 
 We will choose to create an Application Load Balancer. Name the Load Balancer and keep the rest of the default basic configurations. Continue on to Network mappings, choose your VPC then select the three AZ’s with your three subnets, as shown below.
 
-![image alt]()
-
-
-![imaga alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/e869c452c76452ec12f750c531d839333bd9e260/Images/Screenshot%202024-12-23%20203259.png)
 
 
 # Create security group
