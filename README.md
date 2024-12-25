@@ -157,7 +157,7 @@ Continue to “Listeners and routing”. Make sure the listener Protocol is set 
 We can now select our newly created target group, as shown below.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/a56947144f42821c6da51ac076d1d2c8bcbddd0f/Images/Screenshot%202024-12-23%20204101.png)
 
 Scroll to the bottom, review the summary then “Create load balancer”. Now let’s continue to Step 4 — Launch Template!
 
