@@ -174,6 +174,12 @@ Name the launch template, select the Amazon Linux AMI that’s part of AWS free 
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/66f71dc78fc9f2f8619ea61fc8234987bd843f9c/Images/Screenshot%202024-12-23%20204427.png)
 
 
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/dc895e911c63bbeafe6793da9804df4e525b7a1d/Images/Screenshot%202024-12-23%20204442.png)
+
+
+Proceed to create a new key pair to enable you to authenticate via SSH into our EC2 Instances. Save the key pair “.pm” file to your local machine in a safe location. Remember, you can also use a previously created key pair.
+
+Continue to “Network settings” and select our previously created load balancer security group, as shown below.
 
 ![image alt]()
 
