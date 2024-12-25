@@ -171,6 +171,10 @@ Navigate to your EC2 dashboard, on the left, click “Launch Templates”, then 
 Name the launch template, select the Amazon Linux AMI that’s part of AWS free tier by clicking the “Quick Start” tab, then choosing the AMI. Choose the “t2.micro” instance type, as shown below.
 
 
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/66f71dc78fc9f2f8619ea61fc8234987bd843f9c/Images/Screenshot%202024-12-23%20204427.png)
+
+
+
 ![image alt]()
 
 
