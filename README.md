@@ -145,10 +145,13 @@ We can now proceed to “Create security group”.
 
 Select the newly created security group from the list, as seen below.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/a872abdb4b85d954aa708978a0bae98ab7b918b7/Images/Screenshot%202024-12-23%20203818.png)
 
 
 Continue to “Listeners and routing”. Make sure the listener Protocol is set to HTTP and the Port to 80. We will now “Create target group” to be configured for our EC2 Instances. Choose “Instances” for a target type and name your target group. Choose HTTP for the protocol and 80 for the Port. Select our new VPC, click “Next”, then “Create target group”.
+
+
+![image alt]()
 
 
 
