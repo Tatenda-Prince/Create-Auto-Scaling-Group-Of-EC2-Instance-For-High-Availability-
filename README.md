@@ -238,7 +238,7 @@ Proceed to health checks and change the grace period to 120 seconds (2 minutes),
 In additional settings, “enable group metric collection within CloudWatch”.
 
 
-![image alt]() 
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/032f5b00360ca4b14dfc81bbd949fff1969b6823/Images/Screenshot%202024-12-23%20205301.png) 
 
 
 # Configure ASG Group size and CloudWatch Monitoring
