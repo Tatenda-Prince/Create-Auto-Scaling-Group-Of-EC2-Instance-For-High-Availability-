@@ -190,6 +190,7 @@ Continue to the “Advanced details”. Expand the settings, then scroll down to
 
 Copy the bash script on the link below, paste it in the user data field, then “create launch template” —
 
+https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-
 
 
 # Step 5: Create an Autoscaling Group (ASG)
