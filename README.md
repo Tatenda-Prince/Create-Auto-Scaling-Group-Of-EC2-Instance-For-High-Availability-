@@ -188,16 +188,8 @@ Continue to “Network settings” and select our previously created load balanc
 
 Continue to the “Advanced details”. Expand the settings, then scroll down to add the user data to install, start and enable the Apache Web Server. We will also install other software to enable us to stress test an EC2 Instance.
 
-Copy the bash script below, paste it in the user data field, then “create launch template” —
+Copy the bash script on the link below, paste it in the user data field, then “create launch template” —
 
-#!/bin/bash
-# Use this for your user data (script from top to bottom)
-# install httpd (Linux 2 version)
-yum update -y
-yum install -y httpd
-systemctl start httpd
-systemctl enable httpd
-echo "<h1> Hello! Up The Chels from $(hostname -f)</h1>" > /var/www/html/index.html
 
 
 # Step 5: Create an Autoscaling Group (ASG)
