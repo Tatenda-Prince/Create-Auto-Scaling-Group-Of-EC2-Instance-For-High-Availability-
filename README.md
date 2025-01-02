@@ -191,23 +191,13 @@ Continue to the “Advanced details”. Expand the settings, then scroll down to
 Copy the bash script below, paste it in the user data field, then “create launch template” —
 
 #!/bin/bash
-
-#Update all yum package repositories
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
 yum update -y
-
-#Install Apache Web Server
-yum install -y httpd.x86_64
-
-#Start and Enable Apache Web Server
-systemctl start httpd.service
-systemctl enable httpd.service
-
-#Install epel for easy access to install packages for commonly used software
-amazon-linux-extras install epel -y
-
-#Install stress to enable us to test EC2 Instance under stress work loads
-yum install stress -y
-
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1> Hello! Up The Chels from $(hostname -f)</h1>" > /var/www/html/index.html
 
 
 # Step 5: Create an Autoscaling Group (ASG)
@@ -266,7 +256,7 @@ Navigate to your EC2 dashboard and verify that there are two running EC2 Instanc
 Retrieve the public IP Address of each of the EC2 Instance from the Amazon EC2 dashboard “Networking” tab, copy and paste it in the address bar of your preferred browser. Your browser should display the Apache Web Server default Webpage, as seen below.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/777575d3fa5ca86f1f63d3ce7b29500bd9f2f0e1/Images/Screenshot%202025-01-02%20134830.png)
 
 
 You should also be able to connect to one of your instances through the application load balancer’s domain name. You can retrieve this by navigating to your previously created load balancer, copying the DNS name, then pasting it in your browser’s address bar, as seen below.
