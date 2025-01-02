@@ -266,13 +266,13 @@ Navigate to your EC2 dashboard and verify that there are two running EC2 Instanc
 Retrieve the public IP Address of each of the EC2 Instance from the Amazon EC2 dashboard “Networking” tab, copy and paste it in the address bar of your preferred browser. Your browser should display the Apache Web Server default Webpage, as seen below.
 
 
-![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/7dcae7bfeeeefc54eba7893ffcd0183c4181d577/Images/Screenshot%202024-12-23%20205747.png)
+![image alt]()
 
 
 You should also be able to connect to one of your instances through the application load balancer’s domain name. You can retrieve this by navigating to your previously created load balancer, copying the DNS name, then pasting it in your browser’s address bar, as seen below.
 
 
-![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/9591a4872773189bf54523bc362d4e22dce4d6a8/Images/Screenshot%202024-12-23%20205902.png)
+![image alt]()
 
 
 # YAY Congratulations!
