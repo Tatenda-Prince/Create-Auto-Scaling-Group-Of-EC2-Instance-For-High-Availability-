@@ -241,7 +241,7 @@ Continue until you get to the review page. Review the final configurations, then
 
 Navigate to your EC2 dashboard and verify that there are two running EC2 Instances created by your ASG.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/495355974aff659d7377bd73887137e754e663d4/Images/Screenshot%202025-01-03%20150355.png)
 
 
 # Step 6: Connect to Servers running Apache Web Server
