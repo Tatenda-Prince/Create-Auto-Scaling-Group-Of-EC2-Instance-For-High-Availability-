@@ -118,7 +118,7 @@ We now have an Internet Gateway and a configured Route Table. Let’s proceed to
 
 # Step 3: Launch a configure application load balancer
 
-##Configure network mappings
+## Configure network mappings
 
 Head over to your EC2 dashboard, navigate to the left side, then scroll down. Select “Load Balancers”, then “Create load balancer”.
 
