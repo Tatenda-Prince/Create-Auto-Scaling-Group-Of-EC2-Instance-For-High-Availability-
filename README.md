@@ -44,7 +44,7 @@ You are a Cloud Engineer for UP THE CHELS TECH, tasked to build a highly availab
 
 # Step 1: Setup VPC and subnets
 
-# Create VPC
+## Create VPC
 
 Navigate to VPC dashboard and click “Create VPC”. Continue by naming your VPC, then add the IPv4 CIDR block. We will be using 10.10.0.0/16, as seen below. You can now “Create VPC”.
 
@@ -52,7 +52,7 @@ Navigate to VPC dashboard and click “Create VPC”. Continue by naming your VP
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/b43a747ce06afa9c6b11029ad65a6ef82cc5c0bc/Images/Screenshot%202024-12-23%20200843.png)
 
 
-# Create Subnets
+## Create Subnets
 
 Navigate to “Subnets” in the left pane of the VPC dashboard. Click “Create subnets”, then select our newly created VPC from the list. Name your subnet, then choose the Availability Zone (AZ) and assigned IPv4 CIDR block. For the first subnet, we will use AZ us-east-1a and CIDR block 10.10.1.0/24. For the second subnet, use AZ us-east-1b and CIDR block 10.10.2.0/24. Lastly, for subnet three, use AZ us-east-1c and CIDR block 10.10.3.0/24.
 
@@ -76,7 +76,7 @@ Now that we’ve created and configured our VPC and 3 subnets, we can proceed to
 
 # Step 2: launch Internet gateway and configure route tables
 
-# Create Internet Gateway and attach to VPC
+## Create Internet Gateway and attach to VPC
 
 Navigate to your VPC dashboard, select “Internet Gateway”, then “Create a new gateway”. Name the Internet Gateway and proceed to “Create internet gateway”.
 
@@ -93,7 +93,7 @@ Your Internet Gateway’s state should now read “Attached” with the VPC ID o
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/79a8408f3eb29870dee6d72f7078b8637cfb84ee/Images/Screenshot%202024-12-23%20202056.png)
 
 
-# Configure route tables
+## Configure route tables
 
 Navigate to “Route tables” and “Create route table”. Name the route table, choose the VPC, then “Create route table”.
 
@@ -118,7 +118,7 @@ We now have an Internet Gateway and a configured Route Table. Let’s proceed to
 
 # Step 3: Launch a configure application load balancer
 
-# Configure network mappings
+##Configure network mappings
 
 Head over to your EC2 dashboard, navigate to the left side, then scroll down. Select “Load Balancers”, then “Create load balancer”.
 
@@ -127,7 +127,7 @@ We will choose to create an Application Load Balancer. Name the Load Balancer an
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/e869c452c76452ec12f750c531d839333bd9e260/Images/Screenshot%202024-12-23%20203259.png)
 
 
-# Create security group
+## Create security group
 
 Proceed to the Security group setting, then create a new security group. Name your security group and make sure your previously created VPC is selected. Add an inbound rule to allow HTTP traffic from Anywhere (0.0.0.0/0), as seem below.
 
@@ -164,7 +164,7 @@ Scroll to the bottom, review the summary then “Create load balancer”. Now le
 
 # Step 4: Create Launch Template
 
-# Configure Launch Template 
+## Configure Launch Template 
 
 Navigate to your EC2 dashboard, on the left, click “Launch Templates”, then “Create launch template”.
 
@@ -184,18 +184,27 @@ Continue to “Network settings” and select our previously created load balanc
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/7765a8ba39ba9bfd00e2c0d999dbb5eea59898d6/Images/Screenshot%202024-12-23%20204529.png)
 
 
-# Bootstrap EC2 Instance to launch with Apache Web Server
+## Bootstrap EC2 Instance to launch with Apache Web Server
 
 Continue to the “Advanced details”. Expand the settings, then scroll down to add the user data to install, start and enable the Apache Web Server. We will also install other software to enable us to stress test an EC2 Instance.
 
-Copy the bash script on the link below, paste it in the user data field, then “create launch template” —
+Copy the bash script on the code below, paste it in the user data field, then “create launch template” —
 
-https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-
+```language
+#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1> Hello! Up The Chels from $(hostname -f)</h1>" > /var/www/html/index.html
+```
 
 
 # Step 5: Create an Autoscaling Group (ASG)
 
-# Configure new ASG launch options
+## Configure new ASG launch options
 
 After creating the launch template, in the following window, click “Create Auto Scaling group”, as show below. Scroll down, select “Auto scaling groups” in the left pane, then “Create auto scaling group”.
 
@@ -210,7 +219,7 @@ Select our previously created VPC, add the three of our subnets, as seen below, 
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/73ead94ea986f79696511127a0f825d58c6df5dd/Images/Screenshot%202024-12-23%20205105.png) 
 
 
-# Configure load balancing options
+## Configure load balancing options
 
 Select “Attached to and exiting load balancer”, then choose our previously created load balancer’s target group, as shown below.
 
@@ -224,7 +233,7 @@ In additional settings, “enable group metric collection within CloudWatch”.
 ![image alt](https://github.com/Tatenda-Prince/Create-Auto-Scaling-Group-Of-EC2-Instance-For-High-Availability-/blob/032f5b00360ca4b14dfc81bbd949fff1969b6823/Images/Screenshot%202024-12-23%20205301.png) 
 
 
-# Configure ASG Group size and CloudWatch Monitoring
+## Configure ASG Group size and CloudWatch Monitoring
 
 As our use case states, we will set our desired and minimum capacity to 2. Our maximum capacity will be set to 5. Select “Target scaling policy” and make sure the metric type is “Average CPU utilization” and “Target value” is set to 50, then click “Next”.
 
